@@ -10,7 +10,7 @@ rand_num = randint(min,max)
 
 #Prints welcome message and asks an input for name. Name is saved in variable called user_name.
 print("Hello! Welcome to Kharee's Guessing Game \n")
-user_name = raw_input("Input your name: ")
+user_name = input("Input your name: ")
 
 #Sets a variable for number of guesses to 0.
 number_of_guesses = 0
@@ -33,7 +33,7 @@ while number_of_guesses <= 5:
     print("You have " + str(5 - (number_of_guesses)) + " guesses!")
 
     #Displays prompt for user's guess of the random number and formats it into an integer.
-    user_guess = int(raw_input("Input a number: "))
+    user_guess = int(input("Input a number: "))
 
     #If the user's number is lower than the random number, a message is displayed about it and the number of guesses increases by 1.
     if (user_guess < rand_num):
